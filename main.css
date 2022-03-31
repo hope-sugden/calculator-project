@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
+body {
+  width: 350px;
+}
+
+div {
+  border: 2px solid black;
+  width: 100px;
+  height: 20px;
+}
