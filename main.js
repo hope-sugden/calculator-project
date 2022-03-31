@@ -109,11 +109,40 @@ buttonPlus.addEventListener("click", () => {
 
 
 const buttonPercent = document.getElementById("percent");
+const operators = ["+","-","*","/"]
+let currentOperator = ""
 
 buttonPercent.addEventListener("click", () => {
-    console.log(buttonPercent.innerHTML);
     display.innerHTML += "%";
+    operators.forEach(operator => {
+        if (display.innerHTML.includes(operator)) {
+            currentOperator = operator;
+        }
+    }) 
+    const displayArray = display.innerHTML.split(currentOperator);
+    console.log(displayArray);
+    if(currentOperator == "+") {
+        return result.innerHTML = (parseFloat(displayArray[0]) * parseFloat(displayArray[1])/100) + (parseFloat(displayArray[0]));
+      }
+    
+      else if(currentOperator == "-"){
+          return result.innerHTML = (parseFloat(displayArray[0]) * parseFloat(displayArray[1])/100) - (parseFloat(displayArray[0]));
+      }
+    
+      else if(currentOperator == "*") {
+          return result.innerHTML = parseFloat(displayArray[0]) * parseFloat(displayArray[1])/100;
+      }
+    
+      else if(currentOperator == "/") {
+          return result.innerHTML = parseFloat(displayArray[0]) / parseFloat(displayArray[1])/100;
+      }
+      
+      else {
+          alert("calculation not recognised!")
+      }
+
 })
+
 
 const buttonDivide = document.getElementById("divide");
 
@@ -136,10 +165,17 @@ buttonClear.addEventListener("click", () => {
     result.innerHTML = "";
 })
 
+                            const buttonSign = document.getElementById("sign");
+
+                            buttonSign.addEventListener("click",() => {
+                                const displayArray = display.innerHTML.split(currentOperator);
+                                parseFloat(displayArray[displayArray.length])
+                                let changeSign = displayArray.splice(displayArray.length,1,(displayArray.length * (-1)));
+                                return changeSign = display.innerHTML;
+                            })
+
 const buttonEquals = document.getElementById("equals");
 const result = document.getElementById("result")
-const operators = ["+","-","*","/","%"]
-let currentOperator = ""
 
 buttonEquals.addEventListener("click", (event) => {
     operators.forEach(operator => {
@@ -151,19 +187,19 @@ buttonEquals.addEventListener("click", (event) => {
 const displayArray = display.innerHTML.split(currentOperator);
 console.log(displayArray);
   if(currentOperator == "+") {
-    return result.innerHTML = parseInt(displayArray[0]) + parseInt(displayArray[1]);
+    return result.innerHTML = parseFloat(displayArray[0]) + parseFloat(displayArray[1]);
   }
 
   else if(currentOperator == "-"){
-      return result.innerHTML = parseInt(displayArray[0]) - parseInt(displayArray[1]);
+      return result.innerHTML = parseFloat(displayArray[0]) - parseFloat(displayArray[1]);
   }
 
   else if(currentOperator == "*") {
-      return result.innerHTML = parseInt(displayArray[0]) * parseInt(displayArray[1]);
+      return result.innerHTML = parseFloat(displayArray[0]) * parseFloat(displayArray[1]);
   }
 
   else if(currentOperator == "/") {
-      return result.innerHTML = parseInt(displayArray[0]) / parseInt(displayArray[1]);
+      return result.innerHTML = parseFloat(displayArray[0]) / parseFloat(displayArray[1]);
   }
   
   else {
