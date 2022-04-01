@@ -10,12 +10,14 @@
 
 #grid-container {
     display: grid;
+    margin: auto;
+    width: 85%;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 button {
     border-radius: 50%;
-    height: 87.2px;
+    height: 80.2px;
     font-family: $font-body;
     font-size: larger;
     border: none;
@@ -31,5 +33,5 @@ button:active {
 #zero {
     grid-column-start: 1;
     grid-column-end: 3;
-    border-radius: 40%;
+    border-radius: 30px;
 }

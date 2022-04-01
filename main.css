@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
 main {
-  width: 350px;
+  width: 320px;
   margin: auto;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #C291A4;
   font-family: "Orbitron", sans-serif;
-  border-radius: 2%;
+  border-radius: 20px;
 }
 
 body {
@@ -13,7 +17,7 @@ body {
 
 #display {
   border: 2px solid black;
-  width: 90%;
+  width: 85%;
   height: 15%;
   margin: 2% auto;
   background-color: lightgray;
@@ -27,7 +31,7 @@ body {
 
 #result {
   border: 2px solid black;
-  width: 90%;
+  width: 85%;
   height: 15%;
   margin: auto;
   color: #014421;
@@ -53,12 +57,14 @@ body {
 
 #grid-container {
   display: grid;
+  margin: auto;
+  width: 85%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 button {
   border-radius: 50%;
-  height: 87.2px;
+  height: 80.2px;
   font-family: "Orbitron", sans-serif;
   font-size: larger;
   border: none;
@@ -74,5 +80,5 @@ button:active {
 #zero {
   grid-column-start: 1;
   grid-column-end: 3;
-  border-radius: 40%;
+  border-radius: 30px;
 }

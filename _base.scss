@@ -7,11 +7,15 @@ $color-lightgreen: #91C2AF;
 
 
 main {
-    width: 350px;
+    width: 320px;
     margin: auto;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: $color-pink;
     font-family: $font-body;
-    border-radius: 2%;
+    border-radius: 20px;
 }
 body {
     background-color: white;

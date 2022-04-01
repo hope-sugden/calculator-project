@@ -62,84 +62,13 @@ const calculateEquationDisplay = () => {
 const display = document.getElementById("display");
 const button1 = document.getElementById("one");
 
-button1.addEventListener("click", () => {
-console.log(button1.innerHTML);
-display.innerHTML += 1;
+const numberButtons = document.querySelectorAll(".number");
+
+numberButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        display.innerHTML += button.innerHTML
+    })
 })
-
-
-
-const button2 = document.getElementById("two");
-
-button2.addEventListener("click", () => {
-    console.log(button2.innerHTML);
-    display.innerHTML += 2;
-})
-
-
-const button3 = document.getElementById("three");
-
-button3.addEventListener("click", () => {
-    console.log(button3.innerHTML);
-    display.innerHTML += 3;
-})
-
-
-const button4 = document.getElementById("four");
-
-button4.addEventListener("click", () => {
-    console.log(button4.innerHTML);
-    display.innerHTML += 4;
-})
-
-
-const button5 = document.getElementById("five");
-
-button5.addEventListener("click", () => {
-    console.log(button5.innerHTML);
-    display.innerHTML += 5;
-})
-
-
-const button6 = document.getElementById("six");
-
-button6.addEventListener("click", () => {
-    console.log(button6.innerHTML);
-    display.innerHTML += 6;
-})
-
-
-const button7 = document.getElementById("seven");
-
-button7.addEventListener("click", () => {
-    console.log(button7.innerHTML);
-    display.innerHTML += 7;
-})
-
-
-const button8 = document.getElementById("eight");
-
-button8.addEventListener("click", () => {
-    console.log(button8.innerHTML);
-    display.innerHTML += 8;
-})
-
-
-const button9 = document.getElementById("nine");
-
-button9.addEventListener("click", () => {
-    console.log(button9.innerHTML);
-    display.innerHTML += 9;
-})
-
-
-const button0 = document.getElementById("zero");
-
-button0.addEventListener("click", () => {
-    console.log(button0.innerHTML);
-    display.innerHTML += 0;
-})
-
 
 const buttonX = document.getElementById("multiply");
 
