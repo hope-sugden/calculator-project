@@ -1,10 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap");
-body {
+main {
   width: 350px;
+  margin: auto;
+  background-color: #C291A4;
+  font-family: "Orbitron", sans-serif;
+  border-radius: 2%;
 }
 
-div {
+body {
+  background-color: white;
+}
+
+#display {
   border: 2px solid black;
-  width: 100px;
-  height: 20px;
+  width: 90%;
+  height: 15%;
+  margin: 2% auto;
+  background-color: lightgray;
+  font-size: x-large;
+  color: #014421;
+  display: flex;
+  align-items: center;
+  border-radius: 10%;
+  border-color: #014421;
+}
+
+#result {
+  border: 2px solid black;
+  width: 90%;
+  height: 15%;
+  margin: auto;
+  color: #014421;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: lightgray;
+  font-size: x-large;
+  display: flex;
+  align-items: center;
+  border-radius: 10%;
+  border-color: #014421;
+}
+
+.number {
+  background-color: #014421;
+  color: white;
+}
+
+.operator {
+  background-color: #91C2AF;
+  color: black;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+button {
+  border-radius: 50%;
+  height: 87.2px;
+  font-family: "Orbitron", sans-serif;
+  font-size: larger;
+  border: none;
+  margin: 2%;
+}
+
+button:active {
+  border-color: black;
+  box-shadow: 10px 10px 25px 50px black inset;
+  color: white;
+}
+
+#zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-radius: 40%;
 }

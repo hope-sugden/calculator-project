@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 
 $font-body: 'Orbitron', sans-serif;
+$color-pink: #C291A4;
+$color-green: #014421;
+$color-lightgreen: #91C2AF;
 
-body {
+
+main {
     width: 350px;
+    margin: auto;
+    background-color: $color-pink;
+    font-family: $font-body;
+    border-radius: 2%;
+}
+body {
+    background-color: white;
 }

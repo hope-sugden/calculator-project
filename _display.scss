@@ -1,5 +1,29 @@
-div {
+#display {
     border: 2px solid black;
-    width:100px;
-    height: 20px;
+    width:90%;
+    height: 15%;
+    margin: 2% auto;
+    background-color: lightgray;
+    font-size: x-large;
+    color: $color-green;
+    display: flex;
+    align-items: center; 
+    border-radius: 10%;
+    border-color: $color-green;
 }
+
+#result {
+    border: 2px solid black;
+    width:90%;
+    height: 15%;
+    margin: auto;
+    color: $color-green;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: lightgray;
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    border-radius: 10%;
+    border-color: $color-green;
+    }
