@@ -144,16 +144,17 @@ button0.addEventListener("click", () => {
 const buttonX = document.getElementById("multiply");
 
 buttonX.addEventListener("click", () => {
-    console.log(buttonX.innerHTML);
+    console.log("CURRENT OPERATOR =" + currentOperator);
     getCurrentOperator();
-    if(display.innerHTML.includes(operators)) {
-           calculateEquationDisplay();
-           return display.innerHTML += "*"
-    }
-    else {
-        display.innerHTML += "*";
-    }
-
+    console.log("CURRENT OPERATOR =" + currentOperator);
+    operators.forEach (operator => {
+        if(display.innerHTML.includes(operator)) {
+            console.log("This operator exists" + operator);
+               calculateEquationDisplay();  
+               return;
+        }
+    })
+    display.innerHTML+= "*";
 })
 
 
@@ -162,13 +163,14 @@ const buttonSubtract = document.getElementById("subtract");
 buttonSubtract.addEventListener("click", () => {
     console.log(buttonSubtract.innerHTML);
     getCurrentOperator();
-    if(display.innerHTML.includes(operators)) {
-           calculateEquationDisplay();
-           return display.innerHTML += "-"
-    }
-    else {
-        display.innerHTML += "-";
-    }
+    operators.forEach (operator => {
+        if(display.innerHTML.includes(operator)) {
+            console.log("This operator exists" + operator);
+               calculateEquationDisplay();  
+               return;
+        }
+    })
+    display.innerHTML+= "-";
 })
 
 const buttonPlus = document.getElementById("plus");
@@ -176,13 +178,14 @@ const buttonPlus = document.getElementById("plus");
 buttonPlus.addEventListener("click", () => {
     console.log(buttonPlus.innerHTML);
     getCurrentOperator();
-    if(display.innerHTML.includes(operators)) {
-           calculateEquationDisplay();
-           return display.innerHTML += "+"
-    }
-    else {
-        display.innerHTML += "+";
-    }
+    operators.forEach (operator => {
+        if(display.innerHTML.includes(operator)) {
+            console.log("This operator exists" + operator);
+               calculateEquationDisplay();  
+               return;
+        }
+    })
+    display.innerHTML+= "+";
 })
 
 
@@ -224,13 +227,14 @@ const buttonDivide = document.getElementById("divide");
 buttonDivide.addEventListener("click", () => {
     console.log(buttonDivide.innerHTML);
     getCurrentOperator();
-    if(display.innerHTML.includes(operators)) {
-           calculateEquationDisplay();
-           return display.innerHTML += "/"
-    }
-    else {
-        display.innerHTML += "/";
-    }
+    operators.forEach (operator => {
+        if(display.innerHTML.includes(operator)) {
+            console.log("This operator exists" + operator);
+               calculateEquationDisplay();  
+               return;
+        }
+    })
+    display.innerHTML+= "/";
 })
 
 const buttonDecimal = document.getElementById("dot");
