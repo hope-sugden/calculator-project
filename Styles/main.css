@@ -77,6 +77,12 @@ button {
   color: white;
 }
 
+.operator:active {
+  border-color: black;
+  box-shadow: 10px 10px 25px 50px #014421 inset;
+  color: white;
+}
+
 #zero {
   grid-column-start: 1;
   grid-column-end: 3;
