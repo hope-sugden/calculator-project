@@ -71,9 +71,9 @@ button {
   margin: 2%;
 }
 
-button:active {
+.number:active {
   border-color: black;
-  box-shadow: 10px 10px 25px 50px black inset;
+  box-shadow: 10px 10px 25px 50px #91C2AF inset;
   color: white;
 }
 
