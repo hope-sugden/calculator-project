@@ -2,6 +2,8 @@
 // when you add a symbol it should show instead of the first number. 
 // the second number will show instead of the symbol.
 // when equals is pressed, the calcualtion is completed and the answer is shown in the output.
+const operators = ["+","-","*","/"]
+let currentOperator = ""
 const getCurrentOperator = () => {
     operators.forEach(operator => {
         if (display.innerHTML.includes(operator)) {
@@ -119,8 +121,7 @@ buttonPlus.addEventListener("click", () => {
 
 
 const buttonPercent = document.getElementById("percent");
-const operators = ["+","-","*","/"]
-let currentOperator = ""
+
 
 buttonPercent.addEventListener("click", () => {
     display.innerHTML += "%";
@@ -166,12 +167,6 @@ buttonDivide.addEventListener("click", () => {
     display.innerHTML+= "/";
 })
 
-const buttonDecimal = document.getElementById("dot");
-
-buttonDecimal.addEventListener("click", () => {
-    console.log(buttonDecimal.innerHTML);
-    display.innerHTML += ".";
-}) 
 
 const buttonClear = document.getElementById("clear");
 
