@@ -27,3 +27,4 @@ This calculator supports following basic operations
 ### I need to cap the number of digits that can be displayed in the display boxes. Currently they overspill out of the box outside of the calculator. 
 ### The decimal point should only be able to be pressed once within a number. 
 
+<img width="346" alt="Screenshot 2022-04-04 at 16 42 15" src="https://user-images.githubusercontent.com/100870944/161581557-013ffad1-6428-47c9-9b6c-1f2d4349a79f.png">
